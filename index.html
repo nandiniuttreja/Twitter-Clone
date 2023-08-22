@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter Clone - Final</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -71,13 +74,70 @@
       <div class="tweetBox">
         <form>
           <div class="tweetbox__input">
-            <img
-              src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-              alt=""
-            />
-            <input type="text" placeholder="What's happening?" />
+            <div class="inp-myself">
+              <img
+                class="img"
+                src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                alt=""
+              />
+            </div>
+            <div class="select">
+              <div class="separate">
+                <select name="sening" id="selection">
+                  <option value="Everyone">Everyone</option>
+                  <option value="circle">Circle</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input class="input-todo" type="text" placeholder="What's happening?" />
+              </div>
+
+              <div class="only-people">
+                <span class="tweet-neche">@</span> Only people you mention can
+                reply
+              </div>
+              <div class="line"></div>
+              <div class="wrapper">
+                <div class="images-icon">
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons-between">
+                  <button class="btn tweetBox__tweetButton">Post</button>
+                </div>
+              </div>
+              <div class="line-extra"></div>
+              <div class="show_posts">
+                <p>Show 68 Tweets</p>
+              </div>
+            </div>
           </div>
-          <button class="tweetBox__tweetButton">Tweet</button>
+          <ul class="ul-tweet">
+           
+          </ul>
         </form>
       </div>
       <!-- tweetbox ends -->
@@ -97,7 +157,8 @@
               <h3>
                 Somanath Goudar
                 <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span>@somanathg</span
+                  ><span class="material-icons post__badge"> verified </span
+                  >@somanathg</span
                 >
               </h3>
             </div>
@@ -109,10 +170,52 @@
             src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
             alt=""
           />
+
           <div class="post__footer">
-            <span class="material-icons"> repeat </span>
+            <!-- <span class="material-icons"> repeat </span>
             <span class="material-icons"> favorite_border </span>
-            <span class="material-icons"> publish </span>
+            <span class="material-icons"> publish </span> -->
+
+            <div class="allActivity-img">
+              <div class="comment">
+              <img
+                class="comment-class"
+                src="./images/icons8-speech-bubble-32.png"
+                alt=""
+              />
+              <span>1</span>
+              </div>
+              <div class="repost">
+              <img
+                class="comment-class"
+                src="./images/icons8-retweet-32.png"
+                alt=""
+              />
+              </div>
+              <div class="like-img">
+              <img
+                class="comment-class"
+                src="./images/icons8-like-32.png"
+                alt=""
+              />
+              <span>100</span>
+              </div>
+              <div class="view">
+              <img
+                class="comment-class"
+                src="./images/icons8-graph-32.png"
+                alt=""
+              />
+              </div>
+              <div class="share">
+              <img
+                class="comment-class"
+                src="./images/icons8-present-to-all-32.png"
+                
+                alt=""
+              />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -133,7 +236,8 @@
               <h3>
                 Somanath Goudar
                 <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span>@somanathg</span
+                  ><span class="material-icons post__badge"> verified </span
+                  >@somanathg</span
                 >
               </h3>
             </div>
@@ -160,7 +264,17 @@
     <div class="widgets">
       <div class="widgets__input">
         <span class="material-icons widgets__searchIcon"> search </span>
-        <input type="text" placeholder="Search Twitter" />
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- subscribe to premeuim -->
+      <div class="primeium">
+        <p class="pre-para1">Subscribe to Premium</p>
+        <p class="pre-para2">
+          Subscribe to unlock new features and if eligible, receive a share of
+          ads revenue.
+        </p>
+        <button class="pre-btn">Subscribe</button>
       </div>
 
       <div class="widgets__widgetContainer">
@@ -168,23 +282,82 @@
         <blockquote class="twitter-tweet">
           <p lang="en" dir="ltr">
             Sunsets don&#39;t get much better than this one over
-            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
-            <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
+            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw"
+              >@GrandTetonNPS</a
+            >.
+            <a
+              href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
               >#nature</a
             >
-            <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
+            <a
+              href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
               >#sunset</a
             >
             <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
           </p>
           &mdash; US Department of the Interior (@Interior)
-          <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
+          <a
+            href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
             >May 5, 2014</a
           >
         </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+
+      <!-- who to follow -->
+      <div class="who-to-follow">
+        <p class="who-heading">Who to follow</p>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/sidhu_image.jpg" alt="" />
+            <div class="two-p">
+              <p class="wala">Sidhu Moose Wala</p>
+              <p class="moose">@iSidhuMooseWala</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/angular-img.png" alt="" />
+            <div class="two-p">
+              <p class="wala">Angular</p>
+              <p class="moose">@angular</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/pm_modi_img.jpeg" alt="" />
+            <div class="two-p">
+              <p class="wala">PMO India</p>
+              <p class="moose">@PMOIndia</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="show-more sidhu-flex">
+          <p><a href="">Show more</a></p>
+        </div>
       </div>
     </div>
     <!-- widgets ends -->
+
+    <script src="script.js"></script>
   </body>
 </html>

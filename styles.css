@@ -1,14 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Dancing+Script&family=Fasthand&family=Kranky&family=Lobster&family=Montserrat:ital,wght@0,100;0,300;0,400;1,200&family=Poppins:wght@200&family=Rubik+Moonrocks&family=Syne&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
+  /* background-color: white; */
+  /* color: rgb(0, 0, 0); */
+ 
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Syne", sans-serif;
 }
 
 body {
+  color: white;
   --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
+  /* --twitter-background: #e6ecf0; */
+  --twitter-background: #7d95ad15;
+}
+/* .ul-tweet  li{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.051);
+} */
+
+.show_posts{
+  text-align: center;
+    padding-top: 12px;
+    font-size: 15px;
+    color: #1D9BF0;
+    cursor: pointer;
+    border-bottom: 2px solid #9c98981a;
+    padding-bottom: 15px;
+}
+.material-icons:hover{
+  background-color: #5d5e5e22;
+}
+.sidebarOption:hover{
+  width: 181px;
+  background-color: #5d5e5e22;
+}
+.sidebarOption > h2:hover{
+  background-color: #5d5e5e22;
+}
+/* adding Todo CSS*/
+/*javaScript*/
+.inp-myself{
+  margin: 0px 12px 0px 0px;
+  padding: 12px 0px 0px;
+}
+.separate{
+  padding: 0px 0px 12px;
+}
+#selection{
+  border: 1px solid black;
+  border-radius: 19px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.only-people{
+  font-size: 13px;
+  /* margin-bottom: 12px; */
+  padding: 12px 0px 0px;
+  /* border-bottom:1px solid black ; */
+}
+.line{
+  margin-top: 12px;
+  width: 490px;
+  border: 1px solid var(--twitter-background);;
+}
+.line-extra{
+  margin-top: 7px;
+  width: 500px;
+  border: 1px solid var(--twitter-background);;
+}
+.inp{
+  padding: 12px 0px;
 }
 
+/* comment */
+.comment-class {
+  width: 20px;
+  height: 20px;
+   width: min-content;
+  background-color: #fff;
+  
+}
+
+.allActivity-img {
+  display: flex;
+  width: min-content;
+  background-color: #fff;
+  width: 50px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.comment {
+  width: 20px;
+}
+.repost{
+  width: 20px;
+}
+
+
+/* who to follow */
+
+.who-to-follow {
+  /* background-color: #7f7d7d12; */
+  box-shadow: 3px 4px 5px #231e1e;
+  box-shadow: -2px -4px 23px #231e1e;
+  margin: 16px 19px;
+  padding: 1px 3px;
+  border-radius: 17px;
+  border: 2px solid gray;
+  background-color: #353543a6;
+}
+.who-heading {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 16px;
+}
+.sidhu-flex {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  /* margin: 12px 0px; */
+}
+/* .sidhu-flex:hover {
+  background-color: #7f7d7d12;
+} */
+.show-more {
+  padding: 19px 16px;
+  background-color: #7f7d7d12;
+  box-shadow: 3px 4px 5px #231e1e;
+  /* box-shadow: -2px -4px 23px #231e1e; */
+}
+.show-more > p > a {
+  /* color: #036c96; */
+  color: white;
+  text-decoration: none;
+}
+.sidhu-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.search-input {
+  /* outline-style: none;
+  padding-left: 13px;
+  font-size: 18px; */
+}
+.icons {
+  display: flex;
+  padding: 12px 16px;
+}
+.two-p {
+  font-size: 15px;
+  padding-left: 7px;
+}
+.wala {
+  font-weight: bold;
+}
+
+.follow-btn-class {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px 19px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 19px;
+  margin-right: 12px;
+  margin-top: 13px;
+}
+/* premeuim*/
+.primeium {
+  /* background-color: #7f7d7d12; */
+  background-color: #353543a6;
+  border-radius: 12px;
+  box-shadow: 3px 4px 5px #231e1e;
+  box-shadow: -2px -4px 23px #231e1e;
+  border: 2px solid gray;
+  margin: 23px;
+  padding: 13px;
+}
+.pre-para1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 9px;
+}
+.pre-para2 {
+  font-weight: lighter;
+  font-size: 15px;
+  margin: 5px;
+}
+.pre-btn {
+  background-color: #00acee;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  border-radius: 19px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0px;
+}
 .sidebarOption {
   display: flex;
   align-items: center;
@@ -83,7 +277,7 @@ body {
 .feed__header {
   position: sticky;
   top: 0;
-  background-color: white;
+  /* background-color: white; */
   z-index: 100;
   border: 1px solid var(--twitter-background);
   padding: 15px 20px;
@@ -104,15 +298,30 @@ body {
 }
 
 /* tweet box */
-.tweetbox__input img {
+.img {
   border-radius: 50%;
   height: 40px;
+}
+
+.imgage-post{
+  width: 19px;
+  height: 19px;
+  margin-right: 30px;
+  margin-top: 18px;
+  /* margin-bottom: 21px; */
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+ 
 }
 
 .tweetBox {
   padding-bottom: 10px;
   border-bottom: 8px solid var(--twitter-background);
   padding-right: 10px;
+  margin-bottom: 20px;
 }
 
 .tweetBox form {
@@ -127,7 +336,7 @@ body {
 
 .tweetbox__input input {
   flex: 1;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-size: 20px;
   border: none;
   outline: none;
@@ -142,7 +351,7 @@ body {
   border-radius: 30px;
   width: 80px;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 8px;
   margin-left: auto;
 }
 
@@ -220,6 +429,9 @@ body {
 .widgets__input input {
   border: none;
   background-color: var(--twitter-background);
+  outline-style: none;
+  padding-left: 13px;
+  font-size: 18px;
 }
 
 .widgets__searchIcon {
