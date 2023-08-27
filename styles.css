@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",roboto,"Helvetica Neue", Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    height: 600px;
+    margin-top: 48px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.content{
+    padding: 20px;
+    max-width: 760px;
+    min-width: 437px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 64px;
+    line-height: 84px;
+    letter-spacing: -1.2px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    margin-top: 38px;
+}
+h2{
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 36px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    text-decoration: none;
+}
+button{
+    font-size: 15px;
+    font-weight: 700;
+    width: 300px;
+    margin-bottom: 8px;
+    height: 40px;
+    text-align: center;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    outline-style: none;
+    border: 1 solid white;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+.sign-in a{
+    text-decoration: none;
+    color:rgb(29, 155, 240);
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.90;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+button .g{
+    padding-top: 3px;
+    height: 18px;
+}
+button .a{
+    padding-top: 3px;
+    height: 18px;
+}
+.google{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+.google img{
+    margin-right: 4px;
+}
+.apple{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.apple img{
+    margin-right: 4px;
+}
+.or{
+    text-align: center;
+    margin-left: -80px;
+    margin-top: -2px;
+    margin-bottom: 7px;
+}
+.toc{
+    font-size: 12px;
+    width: 300px;
+    line-height: 12px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    margin-top: -1px;
+    color: rgb(113, 118, 123);
+}
+.toc span{
+    color: rgb(29, 155, 240);;
+}
+.create{
+    color: white;
+    background-color: rgb(29, 155, 240);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.ask{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.sign-in{
+    color: rgb(29, 155, 240);
+    background-color: #000000;
+    border-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1 solid white;
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    line-height: 16px;
+    font-size: 12px;
+    color: rgb(113, 118, 123);
+}
+footer p{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    #logo {
+        height: 6rem;
+        margin: 24px 0;
+        margin-bottom: -8px;
+        padding-bottom: 12px;
+        
+    }
+
+    .content {
+        padding: 10px;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 84px;
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
+
+    h2 {
+        font-size: 31px;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+
+    button {
+        width: 300px;
+        margin-bottom: 16px;
+        height: 40px;
+
+    }
+
+    .or {
+        margin-left: -80px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-top: -3px;
+    }
+
+    .toc {
+        width: 300px;
+        margin-bottom: 16px;
+    }
+
+    footer {
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 516px){
+    #logo{
+        height: 5rem;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -0.8px;
+    }
+    h2{
+        line-height: 28px;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 300px;
+    }
+    .or {
+        margin-left: 0px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-top: -3px;
+    }
+    footer{
+        padding-bottom: 0px;
+    }
+}

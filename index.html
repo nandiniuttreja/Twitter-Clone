@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>X. It's what's happening / X</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./signin.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div >
+            <img id="logo" src="../images/twitter.jpg" alt="x logo">
+        </div>
+
+        <div class="content">
+            <h1>Happening now</h1>
+            <h2>Join today.</h2>
+            <div class="login">
+            <button class="google">
+                <img class="g" src="../images/google.png" />Sign in with Google</button>
+            <button class="apple">
+                <img class="a" src="../images/apple.png" />Sign up with Apple</button>
+            <p class="or">or</p>
+            <button class="create">Create account</button>
+            <p class="toc">By signing up, you agree to the<span> Terms of Service</span> and<span> Privacy Policy</span>, including <span>Cookie Use.</span></p>
+            <p class="ask">Already have an account?</p>
+            <button class="sign-in" id="showModalBtn">Sign in</a></button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <p>About</p>
+            <p>Help Center</p>
+            <p>Terms of Service</p>
+            <p>Privacy Poilcy</p>
+            <p>Cookie Policy</p>
+            <p>Accessiblity</p>
+            <p>Ads Info</p>
+            <p>Blog</p>
+            <p>Status</p>
+            <p>Careers</p>
+            <p>Brand Resources</p>
+            <p>Advertising</p>
+            <p>Marketing</p>
+            <p>X for Business</p>
+            <p>Developers</p>
+            <p>Directory</p>
+            <p>Settings</p>
+            <p>© 2023 X Corp.</p>
+        </footer>
+    </section>
+
+    <div class="overlay" id="overlay">
+        <div class="login-box">
+            <div class="icon">
+              <iconify-icon icon="uil:times" onclick="myFun()"></iconify-icon>
+            </div>
+            <img src="../images/logo.png" class="logo" />
+            <div class="w">
+              <h1 class="h1">Sign in to X</h1>
+              <button class="gg-btn">
+                <img src="../images/google.png" />Sign in with Google
+              </button>
+              <button class="app-btn">
+                <img src="../images/apple.png" />Sign in with Apple
+              </button>
+              <hr />
+              <span>or</span>
+              <div class="form">
+                <input type="text" placeholder="Phone, email address, or username" />
+                <a href="/index.html" style="text-decoration: none; color: black">
+                  <button>Next</button>
+                </a>
+              </div>
+              <button class="fp-btn">Forgot password?</button>
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+          </div>
+          <!-- <script>
+            function myFun() {
+              const x = document.querySelector(".login-box") ;
+              const y = document.querySelector(".overlay");
+              x.style.display = "none";
+              y.style.display = "none";
+            }
+          </script> -->
+          <script src="script.js"></script>
+    </div>
+  </div>
+</body>
+</html>
