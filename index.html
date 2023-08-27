@@ -72,7 +72,7 @@
 
       <!-- tweetbox starts -->
       <div class="tweetBox">
-        <form>
+        <div id="form">
           <div class="tweetbox__input">
             <div class="inp-myself">
               <img
@@ -89,7 +89,11 @@
                 </select>
               </div>
               <div class="inp">
-                <input class="input-todo" type="text" placeholder="What's happening?" />
+                <input
+                  class="input-todo"
+                  type="text"
+                  placeholder="What's happening?"
+                />
               </div>
 
               <div class="only-people">
@@ -135,10 +139,8 @@
               </div>
             </div>
           </div>
-          <ul class="ul-tweet">
-           
-          </ul>
-        </form>
+          <ul class="ul-tweet"></ul>
+        </div>
       </div>
       <!-- tweetbox ends -->
 
@@ -166,10 +168,11 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          <img
+          <!-- <img
             src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
             alt=""
-          />
+          /> -->
+          <video src="./images/vedio1.webm" autoplay controls></video>
 
           <div class="post__footer">
             <!-- <span class="material-icons"> repeat </span>
@@ -178,42 +181,41 @@
 
             <div class="allActivity-img">
               <div class="comment">
-              <img
-                class="comment-class"
-                src="./images/icons8-speech-bubble-32.png"
-                alt=""
-              />
-              <span>1</span>
+                <img
+                  class="comment-class"
+                  src="./images/icons8-speech-bubble-32.png"
+                  alt=""
+                />
+                <span>1</span>
               </div>
               <div class="repost">
-              <img
-                class="comment-class"
-                src="./images/icons8-retweet-32.png"
-                alt=""
-              />
+                <img
+                  class="comment-class"
+                  src="./images/icons8-retweet-32.png"
+                  alt=""
+                />
               </div>
               <div class="like-img">
-              <img
-                class="comment-class"
-                src="./images/icons8-like-32.png"
-                alt=""
-              />
-              <span>100</span>
+                <img
+                  class="comment-class"
+                  src="./images/icons8-like-32.png"
+                  alt=""
+                />
+                <span>100</span>
               </div>
               <div class="view">
-              <img
-                class="comment-class"
-                src="./images/icons8-graph-32.png"
-                alt=""
-              />
+                <img
+                  class="comment-class"
+                  src="./images/icons8-graph-32.png"
+                  alt=""
+                />
               </div>
               <div class="share">
-              <img
-                class="comment-class"
-                src="./images/icons8-present-to-all-32.png"
-                
-                alt=""
-              />
+                <img
+                  class="comment-class"
+                  src="./images/icons8-present-to-all-32.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -245,10 +247,11 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          <img
+          <!-- <img
             src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
             alt=""
-          />
+          /> -->
+          <video src="./images/vedio2.webm" autoplay controls></video>
           <div class="post__footer">
             <span class="material-icons"> repeat </span>
             <span class="material-icons"> favorite_border </span>
@@ -277,35 +280,101 @@
         <button class="pre-btn">Subscribe</button>
       </div>
 
-      <div class="widgets__widgetContainer">
-        <h2>What's happening?</h2>
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            Sunsets don&#39;t get much better than this one over
-            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw"
-              >@GrandTetonNPS</a
-            >.
-            <a
-              href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
-              >#nature</a
-            >
-            <a
-              href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
-              >#sunset</a
-            >
-            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
-          </p>
-          &mdash; US Department of the Interior (@Interior)
-          <a
-            href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
-            >May 5, 2014</a
-          >
-        </blockquote>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
+      <div id="whatHappening">
+        <p class="heading">What's happening</p>
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>NFL</span>
+              <span>.</span>
+              <span>4 hours ago</span>
+            </div>
+            <div>
+              <p>Jets at Giants</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./images/jets.jpeg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Politics</span>
+              <span>.</span>
+              <span>Trending</span>
+            </div>
+            <div>
+              <p>Hindu</p>
+            </div>
+            <div>11.8K posts</div>
+          </div>
+          <div class="img">
+            <span>. . .</span>
+          </div>
+        </div>
+
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Thrending In India</span>
+              <!-- <span>.</span>
+              <span>4 hours ago</span> -->
+            </div>
+            <div>
+              <p>#NehaPublicSchool</p>
+            </div>
+            <div>233K posts</div>
+          </div>
+          <div class="img">
+            <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Travel</span>
+              <span>.</span>
+              <span>Thrending</span>
+            </div>
+            <div>
+              <p>#MaduraiTrainAccident</p>
+            </div>
+            <div>
+              4120 posts
+            </div>
+          </div>
+          <div class="img">
+           <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Science</span>
+              <span>.</span>
+              <span>Thrending</span>
+            </div>
+            <div>
+              <p>ISRO</p>
+            </div>
+            <div>
+              320K posts
+            </div>
+          </div>
+          <div class="img">
+           <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImgShowMore">
+          <span>Show More</span>
+        </div>
       </div>
 
       <!-- who to follow -->

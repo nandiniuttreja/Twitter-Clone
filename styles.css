@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+
   /* background-color: white; */
   /* color: rgb(0, 0, 0); */
  
@@ -14,10 +14,75 @@
 
 body {
   color: white;
+  background-color: black;
   --twitter-color: #50b7f5;
   /* --twitter-background: #e6ecf0; */
   --twitter-background: #7d95ad15;
 }
+
+#whatHappening{
+  color: white;
+  height: 551px;
+  border: 2px solid silver;
+  border-radius: 12px;
+  background-color: rgb(22, 24, 28);
+ 
+}
+.heading{
+   
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;  
+}
+.img>img{
+  width: 68px;
+  height: 68px;
+  border-radius: 8px;
+}
+
+.small span{
+  font-size: 13px;
+  color: #71767b;
+}
+
+.img{
+ color: #71767b;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.flexImg{
+  display: flex;
+  justify-content: space-between;
+  height: 89px;
+  padding: 12px 16px;
+}
+.flexImgShowMore{
+  padding: 12px 15px;
+  color: rgb(29, 155, 240);
+  font-weight: lighter;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .ul-tweet  li{
   color: white;
   background-color: rgba(0, 0, 0, 0.051);
@@ -78,7 +143,7 @@ body {
 }
 
 /* comment */
-.comment-class {
+.post__body .comment-class {
   width: 20px;
   height: 20px;
    width: min-content;
@@ -101,23 +166,27 @@ body {
   width: 20px;
 }
 
-
+.input-todo{
+  color: white;
+}
 /* who to follow */
 
 .who-to-follow {
   /* background-color: #7f7d7d12; */
   box-shadow: 3px 4px 5px #231e1e;
   box-shadow: -2px -4px 23px #231e1e;
-  margin: 16px 19px;
+  margin: 16px 0px;
   padding: 1px 3px;
-  border-radius: 17px;
+  border-radius: 20px;
   border: 2px solid gray;
-  background-color: #353543a6;
+  /* background-color: #353543a6; */
+  background-color: rgb(22, 24, 28);
 }
 .who-heading {
   font-size: 20px;
   font-weight: bold;
   padding: 12px 16px;
+  border-radius: 13px 12px 0px 0px;
 }
 .sidhu-flex {
   display: flex;
@@ -130,14 +199,16 @@ body {
 } */
 .show-more {
   padding: 19px 16px;
-  background-color: #7f7d7d12;
+  background-color: rgb(24,24,28);
   box-shadow: 3px 4px 5px #231e1e;
+  border-radius: 17px;
   /* box-shadow: -2px -4px 23px #231e1e; */
 }
 .show-more > p > a {
   /* color: #036c96; */
   color: white;
   text-decoration: none;
+  background-color: rgb(24,24,28);
 }
 .sidhu-img {
   width: 40px;
@@ -175,23 +246,26 @@ body {
 /* premeuim*/
 .primeium {
   /* background-color: #7f7d7d12; */
-  background-color: #353543a6;
+  background-color: rgb(22, 24, 28);;
   border-radius: 12px;
   box-shadow: 3px 4px 5px #231e1e;
   box-shadow: -2px -4px 23px #231e1e;
   border: 2px solid gray;
-  margin: 23px;
+  margin-top: 13px;
+  margin-bottom: 13px;
   padding: 13px;
 }
 .pre-para1 {
   font-weight: bold;
   font-size: 20px;
   margin: 9px;
+  background-color: rgb(22, 24, 28);
 }
 .pre-para2 {
   font-weight: lighter;
   font-size: 15px;
   margin: 5px;
+  background-color: rgb(22, 24, 28);
 }
 .pre-btn {
   background-color: #00acee;
@@ -324,7 +398,7 @@ body {
   margin-bottom: 20px;
 }
 
-.tweetBox form {
+.tweetBox #form {
   display: flex;
   flex-direction: column;
 }
@@ -340,6 +414,7 @@ body {
   font-size: 20px;
   border: none;
   outline: none;
+  background-color: black;
 }
 
 .tweetBox__tweetButton {
@@ -368,11 +443,13 @@ body {
   padding-bottom: 10px;
 }
 
-.post__body img {
+.post__body video {
   width: 450px;
   object-fit: contain;
   border-radius: 20px;
 }
+
+
 
 .post__footer {
   display: flex;
@@ -414,6 +491,7 @@ body {
 /* widgets */
 .widgets {
   flex: 0.3;
+  margin-left: 31px;
 }
 
 .widgets__input {
@@ -424,15 +502,19 @@ body {
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 20px;
+  background-color: rgb(24, 24,28);
 }
 
 .widgets__input input {
   border: none;
-  background-color: var(--twitter-background);
+  /* background-color: var(--twitter-background); */
   outline-style: none;
   padding-left: 13px;
   font-size: 18px;
+  background-color: rgb(24, 24,28);
+  color: white;
 }
+
 
 .widgets__searchIcon {
   color: gray;
