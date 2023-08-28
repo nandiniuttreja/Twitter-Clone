@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone - Final</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Home</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <div id="form">
+          <div class="tweetbox__input">
+            <div class="inp-myself">
+              <img
+                class="img"
+                src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                alt=""
+              />
+            </div>
+            <div class="select">
+              <div class="separate">
+                <select name="sening" id="selection">
+                  <option value="Everyone">Everyone</option>
+                  <option value="circle">Circle</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input
+                  class="input-todo"
+                  type="text"
+                  placeholder="What's happening?"
+                />
+              </div>
+
+              <div class="only-people">
+                <span class="tweet-neche">@</span> Only people you mention can
+                reply
+              </div>
+              <div class="line"></div>
+              <div class="wrapper">
+                <div class="images-icon">
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                  <img
+                    class="imgage-post"
+                    src="./images/icons8-gif-26.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons-between">
+                  <button class="btn tweetBox__tweetButton">Post</button>
+                </div>
+              </div>
+              <div class="line-extra"></div>
+              <div class="show_posts">
+                <p>Show 68 Tweets</p>
+              </div>
+            </div>
+          </div>
+          <ul class="ul-tweet"></ul>
+        </div>
+      </div>
+      <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span
+                  >@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <!-- <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          /> -->
+          <video src="./images/vedio1.webm" autoplay controls></video>
+
+          <div class="post__footer">
+            <!-- <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span> -->
+
+            <div class="allActivity-img">
+              <div class="comment">
+                <img
+                  class="comment-class"
+                  src="./images/icons8-speech-bubble-32.png"
+                  alt=""
+                />
+                <span>1</span>
+              </div>
+              <div class="repost">
+                <img
+                  class="comment-class"
+                  src="./images/icons8-retweet-32.png"
+                  alt=""
+                />
+              </div>
+              <div class="like-img">
+                <img
+                  class="comment-class"
+                  src="./images/icons8-like-32.png"
+                  alt=""
+                />
+                <span>100</span>
+              </div>
+              <div class="view">
+                <img
+                  class="comment-class"
+                  src="./images/icons8-graph-32.png"
+                  alt=""
+                />
+              </div>
+              <div class="share">
+                <img
+                  class="comment-class"
+                  src="./images/icons8-present-to-all-32.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span
+                  >@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <!-- <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          /> -->
+          <video src="./images/vedio2.webm" autoplay controls></video>
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- subscribe to premeuim -->
+      <div class="primeium">
+        <p class="pre-para1">Subscribe to Premium</p>
+        <p class="pre-para2">
+          Subscribe to unlock new features and if eligible, receive a share of
+          ads revenue.
+        </p>
+        <button class="pre-btn">Subscribe</button>
+      </div>
+
+      <div id="whatHappening">
+        <p class="heading">What's happening</p>
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>NFL</span>
+              <span>.</span>
+              <span>4 hours ago</span>
+            </div>
+            <div >
+              <p>Jets at Giants</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./images/jets.jpeg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Politics</span>
+              <span>.</span>
+              <span>Trending</span>
+            </div>
+            <div>
+              <p>Hindu</p>
+            </div>
+            <div>11.8K posts</div>
+          </div>
+          <div class="img">
+            <span>. . .</span>
+          </div>
+        </div>
+
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Thrending In India</span>
+              <!-- <span>.</span>
+              <span>4 hours ago</span> -->
+            </div>
+            <div>
+              <p>#NehaPublicSchool</p>
+            </div>
+            <div>233K posts</div>
+          </div>
+          <div class="img">
+            <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Travel</span>
+              <span>.</span>
+              <span>Thrending</span>
+            </div>
+            <div>
+              <p>#MaduraiTrainAccident</p>
+            </div>
+            <div>
+              4120 posts
+            </div>
+          </div>
+          <div class="img">
+           <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImg">
+          <div class="fourHour">
+            <div class="small">
+              <span>Science</span>
+              <span>.</span>
+              <span>Thrending</span>
+            </div>
+            <div>
+              <p>ISRO</p>
+            </div>
+            <div>
+              320K posts
+            </div>
+          </div>
+          <div class="img">
+           <span>. . .</span>
+          </div>
+        </div>
+
+        <div class="flexImgShowMore">
+          <span>Show More</span>
+        </div>
+      </div>
+
+      <!-- who to follow -->
+      <div class="who-to-follow">
+        <p class="who-heading">Who to follow</p>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/sidhu_image.jpg" alt="" />
+            <div class="two-p">
+              <p class="wala">Sidhu Moose Wala</p>
+              <p class="moose">@iSidhuMooseWala</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/angular-img.png" alt="" />
+            <div class="two-p">
+              <p class="wala">Angular</p>
+              <p class="moose">@angular</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="sidhu-flex">
+          <div class="icons">
+            <img class="sidhu-img" src="./images/pm_modi_img.jpeg" alt="" />
+            <div class="two-p">
+              <p class="wala">PMO India</p>
+              <p class="moose">@PMOIndia</p>
+            </div>
+          </div>
+          <div class="follow-btn">
+            <button class="follow-btn-class">Follow</button>
+          </div>
+        </div>
+
+        <div class="show-more sidhu-flex">
+          <p><a href="">Show more</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- widgets ends -->
+
+    <script src="script1.js"></script>
+  </body>
+</html>
