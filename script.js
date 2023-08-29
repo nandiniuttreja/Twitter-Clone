@@ -1,9 +1,8 @@
-document.getElementById("showModalBtn").addEventListener("click", function() {
-    document.getElementById("overlay").style.display = "flex";
-});
+document.getElementById("overlay").style.display = "none";
+document.getElementById("opac").style.opacity = "1";
 
-document.getElementById("overlay").addEventListener("click", function(event) {
-    if (event.target === this) {
-        this.style.display = "none";
-    }
-});
+function saks() {
+    document.getElementById("overlay").style.display = "flex"; 
+    document.querySelector("body").style.background = "#191c1f";
+    document.getElementById("opac").style.display = "none";
+}

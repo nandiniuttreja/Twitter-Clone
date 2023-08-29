@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter Clone - Final</title>
+    <title>Home / X</title>
+    <link rel="shortcut icon" href="./images/twitter.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles1.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,7 +21,8 @@
   <body>
     <!-- sidebar starts -->
     <div class="sidebar">
-      <i class="fab fa-twitter"></i>
+      <!-- <i class="fab fa-twitter"></i> -->
+      <img id="twitter" src="./images/twitter.jpg" alt="">
       <div class="sidebarOption active">
         <span class="material-icons"> home </span>
         <h2>Home</h2>
@@ -70,196 +72,242 @@
         <h2>Home</h2>
       </div>
 
-      <!-- tweetbox starts -->
-      <div class="tweetBox">
-        <div id="form">
-          <div class="tweetbox__input">
-            <div class="inp-myself">
+      <!-- toggle buttons start -->
+      <div class="toggleOpt">
+        <div class="toggleFF" id="foryou-toggle" onclick="toggleForYou()"><b> Following </b></div>
+
+        <div class="toggleFF" id="following-toggle" onclick="toggleFollowing()"><b> For you </b></div>
+      </div>
+      <!-- toggle buttons end -->
+        <!-- tweetbox starts -->
+        <div class="tweetBox">
+          <div id="form">
+            <div class="tweetbox__input">
+              <div class="inp-myself">
+                <img
+                  class="img"
+                  src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                  alt=""
+                />
+              </div>
+              <div class="select">
+                <div class="separate">
+                  <select name="sening" id="selection"  
+                  style="color: #50b7f5; background-color: #000000; border-color: #444444;">
+                    <option value="Everyone">Everyone</option>
+                    <option value="circle">Circle</option>
+                  </select>
+                </div>
+                <div class="inp">
+                  <input
+                    class="input-todo"
+                    type="text"
+                    placeholder="What's happening?"
+                  />
+                </div>
+
+                <div class="only-people">
+                  <span class="tweet-neche">@</span> Only people you mention can
+                  reply
+                </div>
+                <div class="line"></div>
+                <div class="wrapper">
+                  <div class="images-icon">
+                    <img
+                      class="imgage-post"
+                      src="./images/icons8-gif-26.png"
+                      alt=""
+                    />
+                    <img
+                      class="imgage-post"
+                      src="./images/icons8-gif-26.png"
+                      alt=""
+                    />
+                    <img
+                      class="imgage-post"
+                      src="./images/icons8-gif-26.png"
+                      alt=""
+                    />
+                    <img
+                      class="imgage-post"
+                      src="./images/icons8-gif-26.png"
+                      alt=""
+                    />
+                    <img
+                      class="imgage-post"
+                      src="./images/icons8-gif-26.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icons-between">
+                    <button class="btn tweetBox__tweetButton">Post</button>
+                  </div>
+                </div>
+                <div class="line-extra"></div>
+                <div class="show_posts">
+                  <p>Show 68 Tweets</p>
+                </div>
+              </div>
+            </div>
+            <ul class="ul-tweet"></ul>
+          </div>
+        </div>
+        <!-- tweetbox ends -->
+
+        <!-- post starts -->
+        <div id="tntt">
+          <div class="post">
+            <div class="post__avatar">
               <img
-                class="img"
                 src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
                 alt=""
               />
             </div>
-            <div class="select">
-              <div class="separate">
-                <select name="sening" id="selection">
-                  <option value="Everyone">Everyone</option>
-                  <option value="circle">Circle</option>
-                </select>
-              </div>
-              <div class="inp">
-                <input
-                  class="input-todo"
-                  type="text"
-                  placeholder="What's happening?"
-                />
-              </div>
 
-              <div class="only-people">
-                <span class="tweet-neche">@</span> Only people you mention can
-                reply
-              </div>
-              <div class="line"></div>
-              <div class="wrapper">
-                <div class="images-icon">
-                  <img
-                    class="imgage-post"
-                    src="./images/icons8-gif-26.png"
-                    alt=""
-                  />
-                  <img
-                    class="imgage-post"
-                    src="./images/icons8-gif-26.png"
-                    alt=""
-                  />
-                  <img
-                    class="imgage-post"
-                    src="./images/icons8-gif-26.png"
-                    alt=""
-                  />
-                  <img
-                    class="imgage-post"
-                    src="./images/icons8-gif-26.png"
-                    alt=""
-                  />
-                  <img
-                    class="imgage-post"
-                    src="./images/icons8-gif-26.png"
-                    alt=""
-                  />
+            <div class="post__body">
+              <div class="post__header">
+                <div class="post__headerText">
+                  <h3>
+                    Somanath Goudar
+                    <span class="post__headerSpecial"
+                      ><span class="material-icons post__badge"> verified </span
+                      >@somanathg</span
+                    >
+                  </h3>
                 </div>
-                <div class="icons-between">
-                  <button class="btn tweetBox__tweetButton">Post</button>
+                <div class="post__headerDescription">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
               </div>
-              <div class="line-extra"></div>
-              <div class="show_posts">
-                <p>Show 68 Tweets</p>
+              <!-- <img
+                src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                alt=""
+              /> -->
+              <video src="./images/vedio1.webm" autoplay controls></video>
+
+              <div class="post__footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
               </div>
             </div>
           </div>
-          <ul class="ul-tweet"></ul>
-        </div>
-      </div>
-      <!-- tweetbox ends -->
+          <!-- post ends -->
 
-      <!-- post starts -->
-      <div class="post">
-        <div class="post__avatar">
-          <img
-            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-            alt=""
-          />
-        </div>
-
-        <div class="post__body">
-          <div class="post__header">
-            <div class="post__headerText">
-              <h3>
-                Somanath Goudar
-                <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span
-                  >@somanathg</span
-                >
-              </h3>
+          <!-- post starts -->
+          <div class="post">
+            <div class="post__avatar">
+              <img
+                src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                alt=""
+              />
             </div>
-            <div class="post__headerDescription">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <!-- <img
-            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
-            alt=""
-          /> -->
-          <video src="./images/vedio1.webm" autoplay controls></video>
 
-          <div class="post__footer">
-            <!-- <span class="material-icons"> repeat </span>
-            <span class="material-icons"> favorite_border </span>
-            <span class="material-icons"> publish </span> -->
-
-            <div class="allActivity-img">
-              <div class="comment">
-                <img
-                  class="comment-class"
-                  src="./images/icons8-speech-bubble-32.png"
-                  alt=""
-                />
-                <span>1</span>
+            <div class="post__body">
+              <div class="post__header">
+                <div class="post__headerText">
+                  <h3>
+                    Somanath Goudar
+                    <span class="post__headerSpecial"
+                      ><span class="material-icons post__badge"> verified </span
+                      >@somanathg</span
+                    >
+                  </h3>
+                </div>
+                <div class="post__headerDescription">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
               </div>
-              <div class="repost">
-                <img
-                  class="comment-class"
-                  src="./images/icons8-retweet-32.png"
-                  alt=""
-                />
-              </div>
-              <div class="like-img">
-                <img
-                  class="comment-class"
-                  src="./images/icons8-like-32.png"
-                  alt=""
-                />
-                <span>100</span>
-              </div>
-              <div class="view">
-                <img
-                  class="comment-class"
-                  src="./images/icons8-graph-32.png"
-                  alt=""
-                />
-              </div>
-              <div class="share">
-                <img
-                  class="comment-class"
-                  src="./images/icons8-present-to-all-32.png"
-                  alt=""
-                />
+              <!-- <img
+                src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                alt=""
+              /> -->
+              <video src="./images/vedio2.webm" autoplay controls></video>
+              <div class="post__footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- post ends -->
-
-      <!-- post starts -->
-      <div class="post">
-        <div class="post__avatar">
-          <img
-            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-            alt=""
-          />
+          <!-- post ends -->
         </div>
 
-        <div class="post__body">
-          <div class="post__header">
-            <div class="post__headerText">
-              <h3>
-                Somanath Goudar
-                <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span
-                  >@somanathg</span
-                >
-              </h3>
+        <!-- following post starts-->
+        <div id="showThis">
+          <div class="post">
+            <div class="post__avatar">
+              <img
+                src="./images/ava.jpeg"
+                alt=""
+              />
             </div>
-            <div class="post__headerDescription">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="post__body">
+              <div class="post__header">
+                <div class="post__headerText">
+                  <h3>
+                    Latest In Space 
+                    <span class="post__headerSpecial"
+                      ><span class="material-icons post__badge"> verified </span
+                      >@latestinspace</span
+                    >
+                  </h3>
+                </div>
+                <div class="post__headerDescription">
+                  <p>What is the biggest threat to Earth?</p>
+                </div>
+              </div>
+              <!-- <img
+                src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                alt=""
+              /> -->
+              <video src="./images/earth-revolve.webm" autoplay controls></video>
+              <div class="post__footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
+              </div>
             </div>
           </div>
-          <!-- <img
-            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
-            alt=""
-          /> -->
-          <video src="./images/vedio2.webm" autoplay controls></video>
-          <div class="post__footer">
-            <span class="material-icons"> repeat </span>
-            <span class="material-icons"> favorite_border </span>
-            <span class="material-icons"> publish </span>
+
+          <div class="post">
+            <div class="post__avatar">
+              <img
+                src="./images/JZS7DCyq_400x400.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="post__body">
+              <div class="post__header">
+                <div class="post__headerText">
+                  <h3>
+                    Discovery TV
+                    <span class="post__headerSpecial"
+                      ><span class="material-icons post__badge"> verified </span
+                      >@discoverytv</span
+                    >
+                  </h3>
+                </div>
+                <div class="post__headerDescription">
+                  <p>What is the biggest threat to Earth?</p>
+                </div>
+              </div>
+              <!-- <img
+                src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                alt=""
+              /> -->
+              <video src="./images/sample-5s.webm" autoplay controls></video>
+              <div class="post__footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- post ends -->
+        <!-- following post ends -->
     </div>
     <!-- feed ends -->
 

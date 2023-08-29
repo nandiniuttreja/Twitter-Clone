@@ -10,6 +10,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
+  <div id="opac">
     <section class="container">
         <div >
             <img id="logo" src="../images/twitter.jpg" alt="x logo">
@@ -27,7 +28,7 @@
             <button class="create">Create account</button>
             <p class="toc">By signing up, you agree to the<span> Terms of Service</span> and<span> Privacy Policy</span>, including <span>Cookie Use.</span></p>
             <p class="ask">Already have an account?</p>
-            <button class="sign-in" id="showModalBtn">Sign in</a></button>
+            <button class="sign-in" id="showModalBtn" onclick="saks()">Sign in</a></button>
             </div>
         </div>
     </section>
@@ -53,13 +54,13 @@
             <p>© 2023 X Corp.</p>
         </footer>
     </section>
-
+  </div>
     <div class="overlay" id="overlay">
         <div class="login-box">
             <div class="icon">
               <iconify-icon icon="uil:times" onclick="myFun()"></iconify-icon>
             </div>
-            <img src="../images/logo.png" class="logo" />
+            <img src="../images/twitter.jpg" class="logo" />
             <div class="w">
               <h1 class="h1">Sign in to X</h1>
               <button class="gg-btn">
@@ -72,7 +73,7 @@
               <span>or</span>
               <div class="form">
                 <input type="text" placeholder="Phone, email address, or username" />
-                <a href="/index.html" style="text-decoration: none; color: black">
+                <a href="/index1.html" style="text-decoration: none; color: black">
                   <button>Next</button>
                 </a>
               </div>
@@ -80,14 +81,14 @@
               <p>Don't have an account? <a href="#">Sign up</a></p>
             </div>
           </div>
-          <!-- <script>
+          <script>
             function myFun() {
-              const x = document.querySelector(".login-box") ;
-              const y = document.querySelector(".overlay");
+              const x = document.getElementById("overlay");
               x.style.display = "none";
-              y.style.display = "none";
+              document.getElementById("opac").style.display = "block";
+              document.querySelector("body").style.background = "#000000";
             }
-          </script> -->
+          </script>
           <script src="script.js"></script>
     </div>
   </div>
